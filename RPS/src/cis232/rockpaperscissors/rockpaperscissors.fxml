@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#keyReleasedListener" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cis232.rockpaperscissors.RockPaperScissorsController">
+   <children>
+      <Label fx:id="player2" layoutX="397.0" layoutY="258.0" prefHeight="37.0" prefWidth="150.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="image1" fitHeight="150.0" fitWidth="231.0" layoutX="69.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@maxresdefault.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image2" fitHeight="150.0" fitWidth="200.0" layoutX="397.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@target.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="player1" layoutX="89.0" layoutY="258.0" prefHeight="37.0" prefWidth="150.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="191.0" layoutY="14.0" prefHeight="37.0" prefWidth="243.0" text="Rock Me You Paper Scissors">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="newGame" layoutX="254.0" layoutY="258.0" mnemonicParsing="false" onAction="#newGameListener" prefHeight="44.0" prefWidth="117.0" text="New Game" />
+      <Label fx:id="gamePoints" layoutX="197.0" layoutY="332.0" prefHeight="37.0" prefWidth="231.0" />
+   </children>
+</AnchorPane>
